@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+li a {
+  display: block;
+  color: rgb(144, 188, 240);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+li a:hover {
+  background-color: rgb(98, 146, 160);
+  color: #333;
+  border-radius: 0.5rem;
+}
+
+.active {
+  background-color: #85c0f0;
+}
+
+li:last-child {
+  margin-right: 0;
+}

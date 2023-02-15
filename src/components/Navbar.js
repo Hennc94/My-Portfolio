@@ -1,23 +1,18 @@
-import { Link } from "react-router-dom"
-import { useState } from "react"
+import React from 'react'
+import "../Navbar.css"
+//import scrollToElement
+//import logo from ..
 export default function Navbar() {
-  return(
-    <ul className="nav">
-      <li>
-        <Link to={"/"}>Home</Link>
-      </li>
-      <li>
-        <Link to={"/about"}>About</Link>
-      </li>
-      <li>
-        <Link to={"/contact"}>Contact</Link>
-      </li>
-      <li>
-        <Link to={"/resume"}>Resume</Link>
-      </li>
-      <li>
-        <Link to={"/portfolio"}>Portfolio</Link>
-      </li>
-    </ul>
+  return (
+    <div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+  </div>
   )
 }
