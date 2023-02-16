@@ -1,7 +1,7 @@
 body {
   margin: 0;
+  font-family: 'Arial', sans-serif; 
 }
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -11,11 +11,9 @@ ul {
   display: flex;
   justify-content: center;
 }
-
 li {
   margin: 0 1rem;
 }
-
 li a {
   display: block;
   color: rgb(144, 188, 240);
@@ -23,18 +21,23 @@ li a {
   padding: 1rem;
   text-decoration: none;
   transition: all 0.2s;
-}
-
+  font-size: 1.2rem; /* increase font size */  font-weight: bold; /* add bold font weight */  animation: colorChange 2s ease-in-out infinite alternate; /* add font color animation */}
 li a:hover {
   background-color: rgb(98, 146, 160);
   color: #333;
   border-radius: 0.5rem;
 }
-
 .active {
   background-color: #85c0f0;
 }
-
 li:last-child {
   margin-right: 0;
+}
+@keyframes colorChange {
+  from {
+    color: rgb(144, 188, 240);
+  }
+  to {
+    color: rgb(37, 75, 243);
+  }
 }
