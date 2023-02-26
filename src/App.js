@@ -14,7 +14,7 @@ export default function App(){
     <Navbar/>
     <Home/>
     <About/>
-    {/* <Works/> */}
+    <Works/>
     <Contact/>
     {/* <Resume/> */}
     </main>

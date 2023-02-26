@@ -4,7 +4,7 @@ export default function About() {
     <div className="page" id="about">
       <h1 className="aboutMe">About Me</h1>
       <div className="image">
-        <img id="pic" src={require('../images/Photo.jpeg')} />
+        <img id="pic" src={require('./images/Photo.jpeg')} />
       </div>
       <p className="introduction">
         Hello! My name is Connor. I am currently enrolled in Nebula Academy

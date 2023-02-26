@@ -6,31 +6,46 @@
   align-items: center;
   text-align: center;
 }
+
 .homepage {
   background-image: linear-gradient(to right, #93a5cf, #a5a7a6);
   color: #fff;
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background-size: 400% 400%; /* set the initial gradient size */  animation: gradient 5s ease infinite; /* animate the gradient */}
+  background-size: 400% 400%; /* set the initial gradient size */
+  animation: gradient 5s ease infinite; /* animate the gradient */
+}
+
 .name {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .quote {
   font-size: 1.5rem;
   font-style: italic;
 }
+
 @keyframes gradient {
   0% {
-    background-position: 0% 50%; /* set the initial position */  }
+    background-position: 0% 50%;
+    /* set the initial position */
+  }
+
   50% {
-    background-position: 100% 50%; /* move the gradient to the opposite side */  }
+    background-position: 100% 50%;
+    /* move the gradient to the opposite side */
+  }
+
   100% {
-    background-position: 0% 50%; /* move the gradient back to the starting position */  }
+    background-position: 0% 50%;
+    /* move the gradient back to the starting position */
+  }
 }

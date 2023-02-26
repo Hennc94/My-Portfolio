@@ -1,5 +1,5 @@
 #contact {
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   padding: 60px 0;
 }
 
@@ -14,6 +14,12 @@
   font-weight: 700;
   color: #333;
   margin-bottom: 30px;
+  display: inline-block; /* make each letter an inline-block element */
+}
+
+.Contact h1 span {
+  display: inline-block;
+  animation: jump 0.5s ease-in-out infinite; /* apply the animation to each letter */
 }
 
 .Contact p.quote {
@@ -33,13 +39,17 @@
 .icon-container {
   margin: 0 20px;
   border-radius: 50%;
-  background-color: #fff;
-  width: 50x;
+  background-color: #ffffff;
+  width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+}
+
+.icon-container:hover{
+  transform: translateY(-5px);
 }
 
 .github,
@@ -57,4 +67,17 @@
 .facebook:hover,
 .email:hover {
   color: rgb(83, 57, 199);
+}
+
+/* define the animation */
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* start at normal position */
+  }
+  50% {
+    transform: translateY(-10px); /* jump up */
+  }
+  100% {
+    transform: translateY(0); /* return to normal position */
+  }
 }

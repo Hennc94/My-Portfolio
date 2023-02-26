@@ -1,16 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  display: flex;
+  background-color: #222; /* dark background color */  display: flex;
   justify-content: center;
-}
+  background-image: linear-gradient(to bottom, #222, #444); /* add gradient effect */  border-bottom: 2px solid #eee; /* add border */}
 li {
   margin: 0 1rem;
 }
@@ -21,7 +20,10 @@ li a {
   padding: 1rem;
   text-decoration: none;
   transition: all 0.2s;
-  font-size: 1.2rem; /* increase font size */  font-weight: bold; /* add bold font weight */  animation: colorChange 2s ease-in-out infinite alternate; /* add font color animation */}
+  font-size: 1.2rem; /* increase font size */  font-weight: bold; /* add bold font weight */  font-family: 'Roboto', sans-serif;
+  animation: shake 1s ease-in-out infinite;
+  animation-duration: 8s;
+}
 li a:hover {
   background-color: rgb(98, 146, 160);
   color: #333;
@@ -33,11 +35,14 @@ li a:hover {
 li:last-child {
   margin-right: 0;
 }
-@keyframes colorChange {
-  from {
-    color: rgb(144, 188, 240);
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
   }
-  to {
-    color: rgb(37, 75, 243);
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
   }
 }

@@ -20,7 +20,7 @@
 //           <h4>Job Title at Company</h4>
 //           <p>Employment Period</p>
 //           <ul>
-//             <li>achievement or responsibility</li>
+//             <li>achievement/responsibility</li>
 //             <li></li>
 //           </ul>
 //         </li>

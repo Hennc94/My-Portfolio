@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="Contact" id="info">
-        <h1 className="Contact">Contact!</h1>
+        <h1 className="Contact">Contact</h1>
         <p className="quote">Actively seeking opportunities to expand my knowledge and
           skills in software development. I am currently seeking a
           full-time junior web developer position. Any general questions
